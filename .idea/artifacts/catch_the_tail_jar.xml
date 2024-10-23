@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="catch_the_tail:jar">
+    <output-path>$PROJECT_DIR$/../server/plugins</output-path>
+    <root id="archive" name="catch_the_tail.jar">
+      <element id="module-output" name="catch_the_tail" />
+    </root>
+  </artifact>
+</component>

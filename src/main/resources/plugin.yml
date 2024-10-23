@@ -1,0 +1,8 @@
+name: catch_the_tail
+version: '1.0-SNAPSHOT'
+main: ilbie.com.tailsplugin.TailsPlugin
+api-version: '1.21'
+commands:
+  tails:
+    description: Tails 게임 명령어
+    usage: /tails <start|stop>
