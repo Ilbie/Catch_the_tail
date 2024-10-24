@@ -9,25 +9,20 @@ import java.util.List;
 
 public class TailsTabCompleter implements TabCompleter {
 
-    private final List<String> commands;
-
-    public TailsTabCompleter() {
-        commands = new ArrayList<>();
-        commands.add("start");
-        commands.add("stop");
-    }
-
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
 
         List<String> completions = new ArrayList<>();
 
         if (args.length == 1) {
-            String currentArg = args[0].toLowerCase();
-            for (String cmd : commands) {
-                if (cmd.startsWith(currentArg)) {
-                    completions.add(cmd);
-                }
+            if ("start".startsWith(args[0].toLowerCase())) {
+                completions.add("start");
+            }
+            if ("stop".startsWith(args[0].toLowerCase())) {
+                completions.add("stop");
+            }
+            if ("reset".startsWith(args[0].toLowerCase())) {
+                completions.add("reset");
             }
         }
 

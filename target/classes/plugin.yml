@@ -1,6 +1,6 @@
 name: catch_the_tail
 version: '1.0-SNAPSHOT'
-main: ilbie.com.tailsplugin.TailsPlugin
+main: ilbie.com.tailsplugin.main.TailsPlugin
 api-version: '1.21'
 commands:
   tails:
